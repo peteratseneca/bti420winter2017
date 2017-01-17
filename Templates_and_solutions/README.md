@@ -2,6 +2,13 @@
 
 This folder has project templates that you can use.  
 
-In the near future, it will also have some pre-built solutions for scenarios, and example solutions for assignments.  
+**Web app project v1**
 
-( more to come )
+Includes topics covered during the first few weeks of the course.  
+
+Features:
+-Chinook sample database
+-AutoMapper
+-Manager class
+-.NET Framework 4.6 (which can use the C# 6.0 language features)
+-best compatibility with Visual Studio 2015 with Update 3
