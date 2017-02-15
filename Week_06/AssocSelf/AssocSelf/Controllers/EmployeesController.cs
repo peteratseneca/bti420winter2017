@@ -52,7 +52,7 @@ namespace AssocSelf.Controllers
             else
             {
                 // Create a form, based on the fetched matching object
-                var form = AutoMapper.Mapper.Map<EmployeeEditSupervisorForm>(o);
+                var form = m.mapper.Map<EmployeeEditSupervisorForm>(o);
 
                 // Fetch the employees into a temporary collection
                 // Logically, an employee cannot select "self" as the supervisor
@@ -138,7 +138,7 @@ namespace AssocSelf.Controllers
             else
             {
                 // Create a form, based on the fetched matching object
-                var form = AutoMapper.Mapper.Map<EmployeeEditDirectReportsForm>(o);
+                var form = m.mapper.Map<EmployeeEditDirectReportsForm>(o);
 
                 // Fetch the employees into a temporary collection
                 // Logically, an employee cannot select "self" as a direct report
