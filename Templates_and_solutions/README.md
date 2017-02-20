@@ -1,6 +1,16 @@
 ### Templates and solutions
 
 This folder has project templates that you can use.  
+<br>
+
+**Web app project v2 custom store**  
+
+Includes security topics from the middle weeks of the course.  
+
+Features:  
+- ASP.NET Identity components (identity management, authentication)  
+- Design your own model classes  
+<br>
 
 **Web app project v1**
 
