@@ -14,6 +14,6 @@
 @if (Request.IsLocal)
 {
     <h4>@ViewBag.Prompt</h4>
-    <p>@ViewBag.Error</p>
-    <p>@ViewBag.ErrorDetail</p>
+    <p>@Html.Raw(ViewBag.Error)</p>
+    <p>@Html.Raw(ViewBag.ErrorDetail)</p>
 }

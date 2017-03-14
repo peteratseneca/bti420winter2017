@@ -3,7 +3,7 @@
 Use the Visual Studio "Task List", and look for the "Attention" comment tokens.  
 <br>
 
-**ConditionalMenus**
+**ConditionalMenu**
 
 Security-aware menus and views.  
 

@@ -28,8 +28,27 @@ namespace ConditionalMenu.Controllers
             // "Technical information" error message
 
             ViewBag.Prompt = "Error message:";
-            ViewBag.Error = HttpContext.Error.Message;
-            ViewBag.ErrorDetail = HttpContext.Error.InnerException.Message;
+
+            // Gather the details..
+            if (HttpContext.Error == null)
+            {
+                ViewBag.Error = "(unavailable)";
+            }
+            else
+            {
+                ViewBag.Error = HttpContext.Error.Message.Replace("\r\n", "<br>");
+
+                // Look deeper...
+                if (HttpContext.Error.InnerException == null)
+                {
+                    ViewBag.ErrorDetail = "";
+                }
+                else
+                {
+                    ViewBag.ErrorDetail =
+                        HttpContext.Error.InnerException.Message.Replace("\r\n", "<br>");
+                }
+            }
 
             return View();
         }
