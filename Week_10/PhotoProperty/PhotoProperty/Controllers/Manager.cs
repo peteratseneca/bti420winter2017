@@ -53,6 +53,7 @@ namespace PhotoProperty.Controllers
 
                 cfg.CreateMap<Models.RegisterViewModel, Models.RegisterViewModelForm>();
 
+                // Attention - 4 - Notice the create map statements
                 cfg.CreateMap<Models.Vehicle, Controllers.VehicleBase>();
                 cfg.CreateMap<Models.Vehicle, Controllers.VehiclePhoto>();
                 cfg.CreateMap<Controllers.VehicleAdd, Models.Vehicle>();
