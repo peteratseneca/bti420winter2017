@@ -27,3 +27,4 @@ Features:
 **Sample audio clips**
 
 Can use these for the next assignment.  
+Download and save somewhere, so you can select them during the upload/attach task.  
