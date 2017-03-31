@@ -1,15 +1,12 @@
 ﻿@model PhotoProperty.Controllers.VehicleAddForm
-
 @{
     ViewBag.Title = "Create vehicle";
 }
-
 <h2>Create vehicle</h2>
-
 @using (Html.BeginForm(null, null, FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>Complete the form, and click the Create button</h4>
         <hr />
@@ -21,7 +18,6 @@
                 @Html.ValidationMessageFor(model => model.Model, "", new { @class = "text-danger" })
             </div>
         </div>
-
         <div class="form-group">
             @Html.LabelFor(model => model.Trim, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
@@ -29,7 +25,6 @@
                 @Html.ValidationMessageFor(model => model.Trim, "", new { @class = "text-danger" })
             </div>
         </div>
-
         <div class="form-group">
             @Html.LabelFor(model => model.ModelYear, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
@@ -37,7 +32,6 @@
                 @Html.ValidationMessageFor(model => model.ModelYear, "", new { @class = "text-danger" })
             </div>
         </div>
-
         <div class="form-group">
             @Html.LabelFor(model => model.MSRP, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
@@ -45,7 +39,6 @@
                 @Html.ValidationMessageFor(model => model.MSRP, "", new { @class = "text-danger" })
             </div>
         </div>
-
         <div class="form-group">
             @Html.LabelFor(model => model.Manufacturer, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
@@ -53,9 +46,6 @@
                 @Html.ValidationMessageFor(model => model.Manufacturer, "", new { @class = "text-danger" })
             </div>
         </div>
-
-        <script src="~/Scripts/App/core.js"></script>
-
         <div class="form-group">
             @Html.LabelFor(model => model.PhotoUpload, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
@@ -64,9 +54,7 @@
                 @Html.ValidationMessageFor(model => model.PhotoUpload, "", new { @class = "text-danger" })
             </div>
         </div>
-
         <div class="col-md-offset-2" id="photoPreview"></div>
-
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Create" class="btn btn-default" />
@@ -74,11 +62,11 @@
         </div>
     </div>
 }
-
 <div>
     @Html.ActionLink("Back to List", "Index")
 </div>
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+    <script src="~/Scripts/App/core.js"></script>
 }

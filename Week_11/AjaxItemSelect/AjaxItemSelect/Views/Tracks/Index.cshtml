@@ -8,8 +8,6 @@
 <h4>Select items, and click the Send button</h4>
 <hr>
 
-<script src="~/Scripts/App/core.js"></script>
-
 @using (Html.BeginForm(actionName: "DoSomething", controllerName: "Tracks"))
 {
     @Html.AntiForgeryToken()
@@ -38,4 +36,8 @@
 
     </div>
 
+}
+
+@section Scripts {
+    <script src="~/Scripts/App/core.js"></script>
 }
